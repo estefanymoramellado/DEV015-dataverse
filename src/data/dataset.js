@@ -1,7 +1,7 @@
 export default [
 
   {
-    "id": 1,
+    "id": "1",
     "name": "Usagi Tsukino",
     "shortDescription": "Sailor Moon",
     "description": "La protagonista principal, una chica adolescente que se transforma en la guerrera Sailor Moon.",
@@ -13,7 +13,7 @@ export default [
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Ami Mizuno",
     "shortDescription": "Sailor Mercury",
     "description": "Una de las Sailor Scouts, conocida por su inteligencia y habilidades en el agua.",
@@ -25,7 +25,7 @@ export default [
     }
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Rei Hino",
     "shortDescription": "Sailor Mars",
     "description": "Una de las Sailor Scouts, con poderes basados en el fuego y una personalidad fuerte.",
@@ -37,7 +37,7 @@ export default [
     }
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "Makoto Kino",
     "shortDescription": "Sailor Jupiter",
     "description": "Una de las Sailor Scouts, conocida por su fuerza y habilidades eléctricas.",
@@ -49,7 +49,7 @@ export default [
     }
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Minako Aino",
     "shortDescription": "Sailor Venus",
     "description": "Una de las Sailor Scouts, con habilidades basadas en el amor y la luz.",
@@ -61,7 +61,7 @@ export default [
     }
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "Chibiusa",
     "shortDescription": "Sailor Chibi Moon",
     "description": "La futura hija de Usagi y Mamoru, que también es una Sailor Scout.",
@@ -73,7 +73,7 @@ export default [
     }
   },
   {
-    "id": 7,
+    "id": "7",
     "name": "Setsuna Meioh",
     "shortDescription": "Sailor Pluto",
     "description": "La guardiana del espacio-tiempo, con habilidades relacionadas con el tiempo.",
@@ -85,7 +85,7 @@ export default [
     }
   },
   {
-    "id": 8,
+    "id": "8",
     "name": "Michiru Kaioh",
     "shortDescription": "Sailor Neptune",
     "description": "Una de las Sailor Scouts, conocida por sus habilidades en el agua y su elegancia.",
@@ -97,7 +97,7 @@ export default [
     }
   },
   {
-    "id": 9,
+    "id": "9",
     "name": "Haruka Tenoh",
     "shortDescription": "Sailor Uranus",
     "description": "Una de las Sailor Scouts, con poderes basados en el viento y el cielo.",
@@ -109,7 +109,7 @@ export default [
     }
   },
   {
-    "id": 10,
+    "id": "10",
     "name": "Hotaru Tomoe",
     "shortDescription": "Sailor Saturn",
     "description": "Una de las Sailor Scouts, conocida por su capacidad de destrucción y renacimiento.",
@@ -121,7 +121,7 @@ export default [
     }
   },
   {
-    "id": 11,
+    "id": "11",
     "name": "Mamoru Chiba",
     "shortDescription": "Tuxedo Mask",
     "description": "El misterioso aliado de las Sailor Scouts y el interés amoroso de Usagi.",
@@ -133,7 +133,7 @@ export default [
     }
   },
   {
-    "id": 12,
+    "id": "12",
     "name": "Luna",
     "shortDescription": "Gato guardián",
     "description": "La gata negra que guía y ayuda a las Sailor Scouts.",
@@ -145,7 +145,7 @@ export default [
     }
   },
   {
-    "id": 13,
+    "id": "13",
     "name": "Artemis",
     "shortDescription": "Gato guardián",
     "description": "El gato blanco que ayuda y guía a Minako Aino (Sailor Venus).",
@@ -157,7 +157,7 @@ export default [
     }
   },
   {
-    "id": 14,
+    "id": "14",
     "name": "Diana",
     "shortDescription": "Gato guardián",
     "description": "La hija de Luna y Artemis del futuro, compañera de Chibiusa.",
@@ -169,7 +169,7 @@ export default [
     }
   },
   {
-    "id": 15,
+    "id": "15",
     "name": "Queen Serenity",
     "shortDescription": "Reina de la Luna",
     "description": "La madre de la Princesa Serenity, reina del Reino de la Luna.",
@@ -181,7 +181,7 @@ export default [
     }
   },
   {
-    "id": 16,
+    "id": "16",
     "name": "Queen Nehelenia",
     "shortDescription": "Reina del Sueño Eterno",
     "description": "La villana principal de la saga de la cuarta temporada.",
@@ -193,7 +193,7 @@ export default [
     }
   },
   {
-    "id": 17,
+    "id": "17",
     "name": "Galaxia",
     "shortDescription": "Sailor Galaxia",
     "description": "Una de las Sailor más poderosas, villana principal en la última temporada.",
@@ -205,7 +205,7 @@ export default [
     }
   },
   {
-    "id": 18,
+    "id": "18",
     "name": "Seiya Kou",
     "shortDescription": "Sailor Star Fighter",
     "description": "Uno de los miembros de las Sailor Starlights, tiene una conexión especial con Usagi.",
@@ -217,7 +217,7 @@ export default [
     }
   },
   {
-    "id": 19,
+    "id": "19",
     "name": "Taiki Kou",
     "shortDescription": "Sailor Star Maker",
     "description": "Uno de los miembros de las Sailor Starlights, conocido por su inteligencia.",
@@ -229,7 +229,7 @@ export default [
     }
   },
   {
-    "id": 20,
+    "id": "20",
     "name": "Yaten Kou",
     "shortDescription": "Sailor Star Healer",
     "description": "Uno de los miembros de las Sailor Starlights, conocido por su actitud reservada.",
@@ -241,7 +241,7 @@ export default [
     }
   },
   {
-    "id": 21,
+    "id": "21",
     "name": "Princess Kakyuu",
     "shortDescription": "Princesa Kakyuu",
     "description": "La princesa de Kinmoku y líder de las Sailor Starlights.",
@@ -253,7 +253,7 @@ export default [
     }
   },
   {
-    "id": 22,
+    "id": "22",
     "name": "Sailor ChibiChibi Moon",
     "shortDescription": "Sailor ChibiChibi Moon",
     "description": "Una misteriosa niña que aparece en la última temporada, más tarde revelada como Sailor Cosmos.",
@@ -265,7 +265,7 @@ export default [
     }
   },
   {
-    "id": 23,
+    "id": "23",
     "name": "Helios",
     "shortDescription": "Sacerdote de Elysion",
     "description": "El guardián de los sueños y protector de Elysion.",
@@ -277,7 +277,7 @@ export default [
     }
   },
   {
-    "id": 24,
+    "id": "24",
     "name": "Queen Beryl",
     "shortDescription": "Reina Beryl",
     "description": "La primera gran antagonista, líder del Reino Oscuro.",
