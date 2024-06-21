@@ -6,6 +6,7 @@ export const renderItems = (data) => {
   data.forEach(item => {
     const li = document.createElement('li');
     // Crear el contenido del <li> con la información del item
+    li.classList.add('item-style'); //agregar estilo a los li
     const content = `
           <img src="${item.imageUrl}" alt="${item.name}" style="width:100px;height:auto;">
           <h2>${item.name} (${item.shortDescription})</h2>
@@ -16,17 +17,15 @@ export const renderItems = (data) => {
               <li><strong>Tipo de Guardiana:</strong> ${item.facts.tipoDeGuardiana}</li>
           </ul>
       `;
-    const rootElement = document.querySelector('#root');
-
-    // Renderizar los elementos dentro de 'root'
-    rootElement.appendChild(renderItems(data));
-
     li.innerHTML = content;
     // Agregar el <li> al <ul>
     ul.appendChild(li);
   });
-  // Retornar el elemento <ul>
-  return ul;
+
+  // Agregar el <ul> al elemento root
+  const rootElement = document.querySelector('#root');
+  rootElement.appendChild(ul);
 }
+// Exportar la función para que pueda ser utilizada en otros archivos
 // Exportar la función para que pueda ser utilizada en otros archivos
 //export { renderItems };
