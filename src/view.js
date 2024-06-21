@@ -6,7 +6,7 @@ export const renderItems = (data) => {
   data.forEach(item => {
     const li = document.createElement('li');
     // Crear el contenido del <li> con la información del item
-    li.classList.add('item-style'); //agregar estilo a los li
+    li.classList.add('item-estilo'); //agregar estilo a los li
     const content = `
           <img src="${item.imageUrl}" alt="${item.name}" style="width:100px;height:auto;">
           <h2>${item.name} (${item.shortDescription})</h2>
