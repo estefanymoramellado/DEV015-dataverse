@@ -14,8 +14,27 @@
 
   <section>
     <main>
-      <h2>Escribir introducción</h2>
+      <h2>Encuentra tu personaje favorito</h2>
     </main>
+  </section>
+
+  <section>
+    <label for="sortBy"> Ordenar por: </label>
+    <select data-testid="select-filter" name="tipo" id="sortBy">
+      <option value="vacio"> Elige una opción </option>
+      <option value="tipo-guardiana"> Tipo Guardiana </option>
+      <option value="signo-zodiacal"> Signo Zodiacal </option>
+      <option value="mes-nacimiento"> Mes Nacimiento </option>
+    </select>
+
+    <label for="sortOrder"> Tipo de Orden: </label>
+    <select data-testid="select-sort" name="nombre" id="sortOrder">
+      <option value="vacio"> Elige una opción </option>
+      <option value="asc"> Orden A-Z </option>
+      <option value="des"> Orden Z -A </option>
+    </select>
+
+    <button data-testid="button-clear"> Limpiar filtro </button>
   </section>
 
   <section id="root">
