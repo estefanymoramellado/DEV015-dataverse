@@ -5,7 +5,6 @@ import data from './data/dataset.js';
 function init() {
   // Mostrar los elementos en la interfaz de usuario
   const ul = renderItems(data);
-
   // Agregar el <ul> al elemento root
   const rootElement = document.querySelector('#root');
   rootElement.appendChild(ul);
