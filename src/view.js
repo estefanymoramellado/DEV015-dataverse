@@ -13,16 +13,15 @@ export const renderItems = (data) => {
            <div itemscope itemtype="http://schema.org/Person">
            <div class="div-item">
         <img itemprop="image" src="${item.imageUrl}" alt="${item.name}">
+           </div>
+        <h2 itemprop="name">${item.name} (${item.shortDescription})</h2>
+    </div>
           <div class="item-facts">
             <p class="facts-fecha"><strong>Cumpleaños:</strong> <span itemprop="birthDate">${item.facts.fechaDeNacimiento}</span></p>
             <p class="facts-signo"><strong>Signo Zodiacal:</strong> <span itemprop="zodiacSign">${item.facts.signoZodiacal}</span></p>
             <p class="facts-tipo"><strong>Tipo de Guardiana:</strong> <span itemprop="guardianType">${item.facts.tipoDeGuardiana}</span></p>
         </div>
-           </div>
-        <h2 itemprop="name">${item.name} (${item.shortDescription})</h2>
-        <p itemprop="description">${item.description}</p>
-      
-    </div>
+        
       `;
     li.innerHTML = content;
     // Agregar el <li> al <ul>
