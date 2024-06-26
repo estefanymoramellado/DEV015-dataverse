@@ -10,6 +10,9 @@ export default [
       "fechaDeNacimiento": "30 de junio",
       "signoZodiacal": "Cáncer",
       "tipoDeGuardiana": "Luna"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   },
   {
@@ -22,6 +25,9 @@ export default [
       "fechaDeNacimiento": "10 de septiembre",
       "signoZodiacal": "Virgo",
       "tipoDeGuardiana": "Agua"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   },
   {
@@ -34,6 +40,9 @@ export default [
       "fechaDeNacimiento": "17 de abril",
       "signoZodiacal": "Aries",
       "tipoDeGuardiana": "Fuego"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   },
   {
@@ -46,6 +55,9 @@ export default [
       "fechaDeNacimiento": "5 de diciembre",
       "signoZodiacal": "Sagitario",
       "tipoDeGuardiana": "Trueno"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   },
   {
@@ -58,6 +70,9 @@ export default [
       "fechaDeNacimiento": "22 de octubre",
       "signoZodiacal": "Libra",
       "tipoDeGuardiana": "Luz"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   },
   {
@@ -70,6 +85,9 @@ export default [
       "fechaDeNacimiento": "30 de junio",
       "signoZodiacal": "Cáncer",
       "tipoDeGuardiana": "Luna"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Fuera del Sistema Solar"
     }
   },
   {
@@ -82,6 +100,9 @@ export default [
       "fechaDeNacimiento": "29 de octubre",
       "signoZodiacal": "Escorpio",
       "tipoDeGuardiana": "Tiempo"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Externo"
     }
   },
   {
@@ -94,6 +115,9 @@ export default [
       "fechaDeNacimiento": "6 de marzo",
       "signoZodiacal": "Piscis",
       "tipoDeGuardiana": "Océano"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Externo"
     }
   },
   {
@@ -106,6 +130,9 @@ export default [
       "fechaDeNacimiento": "27 de enero",
       "signoZodiacal": "Acuario",
       "tipoDeGuardiana": "Cielo"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Externo"
     }
   },
   {
@@ -118,6 +145,9 @@ export default [
       "fechaDeNacimiento": "6 de enero",
       "signoZodiacal": "Capricornio",
       "tipoDeGuardiana": "Muerte"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Externo"
     }
   },
   {
@@ -130,6 +160,9 @@ export default [
       "fechaDeNacimiento": "3 de agosto",
       "signoZodiacal": "Leo",
       "tipoDeGuardiana": "Protector"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Protectores"
     }
   },
   {
@@ -142,6 +175,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Gato"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Gato Guardian"
     }
   },
   {
@@ -154,6 +190,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Gato"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Gato Guardian"
     }
   },
   {
@@ -166,6 +205,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Gato"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Gato Guardian"
     }
   },
   {
@@ -178,6 +220,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Reina"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Protectores"
     }
   },
   {
@@ -190,6 +235,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Oscuridad"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Enemigos"
     }
   },
   {
@@ -202,6 +250,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Galaxia"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Fuera del Sistema Solar"
     }
   },
   {
@@ -214,6 +265,9 @@ export default [
       "fechaDeNacimiento": "30 de julio",
       "signoZodiacal": "Leo",
       "tipoDeGuardiana": "Estrella"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Fuera del Sistema Solar"
     }
   },
   {
@@ -226,6 +280,9 @@ export default [
       "fechaDeNacimiento": "24 de mayo",
       "signoZodiacal": "Géminis",
       "tipoDeGuardiana": "Estrella"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Fuera del Sistema Solar"
     }
   },
   {
@@ -238,6 +295,9 @@ export default [
       "fechaDeNacimiento": "8 de febrero",
       "signoZodiacal": "Acuario",
       "tipoDeGuardiana": "Estrella"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Fuera del Sistema Solar"
     }
   },
   {
@@ -250,6 +310,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Princesa"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Protectores"
     }
   },
   {
@@ -262,6 +325,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Estrella"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Fuera del Sistema Solar"
     }
   },
   {
@@ -274,6 +340,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Sueños"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Protectores"
     }
   },
   {
@@ -286,6 +355,9 @@ export default [
       "fechaDeNacimiento": "N/A",
       "signoZodiacal": "N/A",
       "tipoDeGuardiana": "Oscuridad"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Enemigos"
     }
   }
 
