@@ -13,6 +13,9 @@ export const data = [
       "fechaDeNacimiento": "30 de junio",
       "signoZodiacal": "Cáncer",
       "tipoDeGuardiana": "Luna"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   },
   {
@@ -25,6 +28,9 @@ export const data = [
       "fechaDeNacimiento": "10 de septiembre",
       "signoZodiacal": "Virgo",
       "tipoDeGuardiana": "Agua"
+    },
+    "extraInfo": {
+      "tipoGuardian": "Guardian Sistema Solar Interno"
     }
   }
 ];
