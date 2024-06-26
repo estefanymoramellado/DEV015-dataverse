@@ -28,52 +28,85 @@ body {
     max-width: 18rem;
 }
 
-
 header {
     color: #BB4DB9;
     font-size: 400%;
     font-family: 'Galada', cursive;
     -webkit-text-stroke: 0.5px #FFFFB6;
 }
-
 .menu {
     background-color: #DC5CD3;
-    border-radius: 0.0625em;
+   
     padding: 0.625em 1.25em;
     display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
     width: 88.75em;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 1em;
+}
+.menu img {
+    width: 6em; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+}
+.right-image {
+    order: 1; 
 }
 
+
 label[for="sortBy"] {
-    font-family: 'Galada', cursive;
-    font-size: 1.6875em;
-    color: #FCF4FB;
-    margin-left: 400px;
-    padding-top: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: #fdd5fa;
+    width: 15%;
+    margin: 0.1em;
+}
+
+#sortBy {
+    background-color: #fdd5fa;
+    border-radius: 2em;
+    padding: 0.5em 1em; /* Ajusta el padding horizontal según tus necesidades */
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: #25022d;
+    width: 15%; /* Asegura que ambos elementos ocupen el mismo ancho */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+
 }
 
 label[for="sortOrder"] {
-    font-family: 'Galada', cursive;
-    font-size: 27px;
-    color: #FCF4FB;
-    margin-right: 10px;
-    margin-left: 70px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: #fdd5fa;
+    width: 15%;
+    margin: 0.1em;
 }
+#sortOrder {
+    background-color: #fdd5fa;
+    border-radius: 2em;
+    padding: 0.5em 1em; /* Ajusta el padding horizontal según tus necesidades */
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: #25022d;
+    width: 15%; /* Asegura que ambos elementos ocupen el mismo ancho */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    
+}
+
 
 button[data-testid="button-clear"] {
-    font-family: 'Galada', cursive;
-    background-color: #D2D3FC;
-    color: #931587;
-    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: #6477e1;
+    color: #f7e0f5;
+    font-size: 1.2em;
     padding: 5px 10px;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 0.2em;
     margin-left: 70px;
+    width: 12%;
 }
 
-.card-container {
+.card-list {
     background-color: #D2D3FC;
     border: 4px solid #FFFFB6;
     border-radius: 30px;
@@ -85,21 +118,22 @@ button[data-testid="button-clear"] {
     margin: 10px;
 }
 
-.card-list {
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #E7E8FF;
-    width: 1455px;
+    width: 90.9375rem; 
     list-style: none;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 1.25rem; 
+    padding: 1.25rem; 
     box-sizing: border-box;
-    margin: 10px auto;
-    margin-top: 0px;
+    margin: 0.625rem auto; 
+    margin-top: 0; 
 }
 
 .card-container h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 1.0em;
     background-color: #45A7F0;
     color: #001184;
@@ -108,6 +142,7 @@ button[data-testid="button-clear"] {
     text-align: center;
     padding: 10px;
     border-radius: 30px;
+    width: 80%;
 }
 
 
@@ -124,24 +159,33 @@ button[data-testid="button-clear"] {
 
 .facts-fecha {
     background-color: #F586EB;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
     color: #F6F6FD;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 16px;
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 1em;
+    width: 90%;
 }
 
 .facts-signo {
     background-color: #F586EB;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
     color: #F6F6FD;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 16px;
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 1em;
+    width: 90%;
 }
 
 .facts-tipo {
     background-color: #F586EB;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
     color: #F6F6FD;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 16px;
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 1em;
+    width: 90%;
 }
