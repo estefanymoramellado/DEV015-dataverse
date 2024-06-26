@@ -6,89 +6,49 @@ body {
     /* Evita que la imagen se repita */
     background-attachment: fixed;
     /* Fija la imagen para que no se mueva con el scroll */
-    /*background-position: center;  Centra la imagen */
+    background-position: center;
+    padding: 4rem 6rem;
 }
 
-.corner-image {
-    position: absolute;
-    top: 0;
-    left: 260px;
-    /* Ajusta este valor para mover la imagen a la derecha */
-    margin: 60px;
+.contenedor-logoh1 {
+    position: relative;
+    /* Permite posicionar elementos hijos absolutamente dentro del contenedor */
+    width: 100%;
+    height: 50vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    display: flex;
+    align-items: center;
 }
 
-.corner-image img {
-    width: 400px;
-    height: auto;
+.logo {
+    width: 100%;
+    max-width: 18rem;
 }
 
 
-.image-right {
-    position: absolute;
-    top: 425px; /* Ajusta la posición vertical de la imagen */
-    right: 170px; /* Ajusta la posición horizontal de la imagen */
-}
-
-.image-right img {
-    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto;
-}
-
-.image-left {
-    position: absolute;
-    top: 425px; /* Ajusta la posición vertical de la imagen */
-    left: 170px; /* Ajusta la posición horizontal de la imagen */
-}
-
-.image-left img {
-    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto;
-}
-
-.image-logo {
-    position: absolute;
-    top: 442px; /* Ajusta la posición vertical de la imagen */
-    left: 270px; /* Ajusta la posición horizontal de la imagen */
-}
-
-.image-logo img {
-    width: 190px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto;
-}
-
-h1 {
+header {
     color: #BB4DB9;
-    font-size: 90px;
-    text-align: center;
+    font-size: 400%;
     font-family: 'Galada', cursive;
-    margin-top: 180px;
-    margin-bottom: 40px;
-    margin-left: 200px;
-    -webkit-text-stroke: 0.5px #FFFFB6; /* Borde amarillo de 3px */
+    -webkit-text-stroke: 0.5px #FFFFB6;
 }
-
-main {
-    font-family: 'Galada', cursive;
-    font-size: 30px;
-    color: #1011AC;
-    margin-top: -90px;
-    margin-left: 900px;
-}
-
 
 .menu {
     background-color: #DC5CD3;
-    border-radius: 1px;
-    padding: 10px 20px;
+    border-radius: 0.0625em;
+    padding: 0.625em 1.25em;
     display: flex;
-    width: 1420px;
+    width: 88.75em;
     margin: 0 auto;
-    margin-top: 90px;
-    }
-  
+    margin-top: 5em;
+}
+
 label[for="sortBy"] {
     font-family: 'Galada', cursive;
-    font-size: 27px;
+    font-size: 1.6875em;
     color: #FCF4FB;
     margin-left: 400px;
     padding-top: 2px;
@@ -130,12 +90,12 @@ button[data-testid="button-clear"] {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #E7E8FF;
-    width: 1455px; /* Asegúrate de que esta medida coincida con el ancho del .menu */
+    width: 1455px;
     list-style: none;
     margin-top: 20px;
     padding: 20px;
     box-sizing: border-box;
-    margin: 10px auto; /* Centra el card-container */
+    margin: 10px auto;
     margin-top: 0px;
 }
 

@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Dataverse</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <section class="encabezado">
-    <div class="corner-image">
-      <img src="images/1122.png" alt="Imagen en la esquina superior izquierda">
-    </div>
-    <div class="image-right">
-      <img src="images/2233.png" alt="Imagen right sobre menu">
-    </div>
-    <div class="image-left">
-      <img src="images/2233.png" alt="Imagen right sobre menu">
-    </div>
-    <div class="image-logo">
-      <img src="images/3344.png" alt="Imagen right sobre menu">
-    </div>
 
-    <header>
-      <h1>Mundo Sailor</h1>
-    </header>
 
+    <div class="contenedor-logoh1">
+      <img class="logo" src="images/1122.png" alt="Imagen en la esquina superior izquierda">
+      <header>
+        <h1>Mundo Sailor</h1>
+      </header>
+    </div>
+  </div>
+
+
+  
     <section class="lema">
       <main>
-        <h2>¡Descubre tu personaje favorito!</h2>
+        <h2></h2>
       </main>
     </section>
   </section>
-
   <section class="menu">
     <label for="sortBy"> Ordenar por: </label>
     <select data-testid="select-filter" name="tipo" id="sortBy">
@@ -45,21 +37,19 @@
       <option value="gato-guardian"> Gato Guardian </option>
       <option value="enemigos"> Enemigos </option>
     </select>
-
     <label for="sortOrder"> Tipo de Orden: </label>
     <select data-testid="select-sort" name="nombre" id="sortOrder">
       <option value="vacio"> Elige una opción </option>
       <option value="asc"> Orden A-Z </option>
       <option value="des"> Orden Z -A </option>
     </select>
-
     <button data-testid="button-clear"> Limpiar filtro </button>
   </section>
 
+  
   <section id="root">
   </section>
   <footer> </footer>
   <script src="main.js" type="module"></script>
 </body>
-
 </html>
