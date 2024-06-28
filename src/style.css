@@ -1,52 +1,55 @@
+/* Mobile First Styles */
 body {
     background-image: url('images/3638367.jpg');
     background-size: cover;
-    /* Asegura que la imagen cubra todo el fondo */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     background-attachment: fixed;
-    /* Fija la imagen para que no se mueva con el scroll */
     background-position: center;
-    margin-top: 5em;
+    margin-top: 2em;
     overflow-x: hidden;
 }
 
 .encabezado {
-    margin-top: 9em;
+    margin-top: 4em;
 }
 
 .contenedor-logoh1 {
     position: relative;
-    /* Permite posicionar elementos hijos absolutamente dentro del contenedor */
     width: 100%;
     height: 4em;
     padding: 1rem;
     box-sizing: border-box;
     margin: 0 auto;
-    /* Centra el contenedor horizontalmente */
     display: flex;
     align-items: center;
-    margin-left: 10em;
+    padding-left: 0;
 }
 
 .logo {
-    width: 100%;
-    max-width: 18rem;
+    width: 35%;
+    padding-left: 1em;
+    padding-top: 1em;
+
 }
 
 header {
     color: #BB4DB9;
-    font-size: 400%;
+    font-size: x-large;
     font-family: 'Galada', cursive;
     -webkit-text-stroke: 0.5px #FFFFB6;
+    padding-bottom: 2em;
+    height: 2em;
 }
 
 .lema {
     color: #BB4DB9;
     font-family: 'Galada', cursive;
-    font-size: 1.6em;
+    font-size: x-small;
     text-align: center;
     margin-bottom: 3em;
+    display: flex;
+    padding-bottom: 1em;
+    padding-left: 12em;
 }
 
 .menu {
@@ -54,15 +57,13 @@ header {
     padding: 1%;
     display: flex;
     align-items: center;
-    /* Centra verticalmente los elementos */
     justify-content: space-between;
-    /* Distribuye espacio entre los elementos */
     width: 100%;
+    height: 2.6em;
 }
 
 .menu img {
-    width: 6%;
-    /* Ajusta el tamaño de las imágenes según sea necesario */
+    width: 10%;
 }
 
 .right-image {
@@ -71,37 +72,32 @@ header {
 
 label {
     font-family: "Roboto", sans-serif;
-    font-size: x-large;
+    font-size: x-small;
     color: #fdd5fa;
-    width: 15%;
-    margin: 0.1em;
+    width: 100%;
+    margin: 0.5em 0;
 }
 
 select {
     background-color: #fdd5fa;
     border-radius: 2em;
-    padding: 0.5em 1em;
-    /* Ajusta el padding horizontal según tus necesidades */
     font-family: "Roboto", sans-serif;
     font-size: medium;
     color: #25022d;
-    width: 15%;
-    /* Asegura que ambos elementos ocupen el mismo ancho */
+    width: 100%;
     box-sizing: border-box;
-    /* Incluye padding y border en el tamaño total */
-
 }
 
 button[data-testid="button-clear"] {
     font-family: "Roboto", sans-serif;
     background-color: #6477e1;
     color: #f7e0f5;
-    font-size: large;
+    font-size: x-small;
     padding: 0.5%;
     cursor: pointer;
     border-radius: 0.7em;
-    margin-left: 2em;
-    width: 12%;
+    margin-left: 0;
+    width: 100%;
     text-align: center;
 }
 
@@ -109,10 +105,10 @@ button[data-testid="button-clear"] {
     background-color: #D2D3FC;
     border: 4px solid #FFFFB6;
     border-radius: 3em;
-    width: 30%;
+    width: 80%;
     list-style: none;
     margin-top: 20px;
-    padding: 3em;
+    padding: 1em;
     box-sizing: border-box;
     margin: 1em;
 }
@@ -129,7 +125,7 @@ button[data-testid="button-clear"] {
 
 .card-container h2 {
     font-family: "Roboto", sans-serif;
-    font-size: larger;
+    font-size: smaller;
     background-color: #45A7F0;
     color: #001184;
     margin-top: 1em;
@@ -140,7 +136,6 @@ button[data-testid="button-clear"] {
     width: 90%;
 }
 
-
 .div-item {
     width: 100%;
     display: flex;
@@ -149,7 +144,7 @@ button[data-testid="button-clear"] {
 
 img[itemprop="image"] {
     width: 50%;
-    height: 13em;
+    height: 11em;
 }
 
 .item-facts {
@@ -161,19 +156,87 @@ img[itemprop="image"] {
 .facts {
     background-color: #F586EB;
     font-family: "Roboto", sans-serif;
-    font-size: medium;
+    font-size: small;
     color: #470742;
     text-align: center;
     padding: 0.8em;
     border-radius: 2em;
-    width: 90%;
-    margin: 2%;
+    width: 80%;
+    margin: 2%
 }
 
 footer {
-    font-size: larger;
+    font-size: medium;
     text-align: center;
     color: blueviolet;
     padding: 1em;
     font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-top: 5em;
+    }
+
+    .encabezado {
+        margin-top: 9em;
+    }
+
+    .contenedor-logoh1 {
+        padding-left: 10em;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+    header {
+        font-size: 400%;
+    }
+
+    .lema {
+        font-size: 1.6em;
+        padding-left: 17em;
+    }
+
+    .menu img {
+        width: 6%;
+    }
+
+    label {
+        font-size: x-large;
+        width: 15%;
+    }
+
+    select {
+        padding: 0.5em 1em;
+        width: 15%;
+    }
+
+    button[data-testid="button-clear"] {
+        font-size: large;
+        margin-left: 2em;
+        width: 12%;
+    }
+
+    .card-list {
+        width: 30%;
+        padding: 3em;
+    }
+
+    .card-container h2 {
+        font-size: larger;
+    }
+
+    img[itemprop="image"] {
+        height: 15em;
+    }
+
+    .facts {
+        font-size: medium;
+    }
+
+
+
 }
