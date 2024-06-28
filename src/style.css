@@ -9,13 +9,13 @@ body {
     background-position: center;
     margin-top: 5em;
     overflow-x: hidden;
-   }
+}
 
-   .encabezado {
+.encabezado {
     margin-top: 9em;
-   }
-   
-   .contenedor-logoh1 {
+}
+
+.contenedor-logoh1 {
     position: relative;
     /* Permite posicionar elementos hijos absolutamente dentro del contenedor */
     width: 100%;
@@ -40,166 +40,140 @@ header {
     font-family: 'Galada', cursive;
     -webkit-text-stroke: 0.5px #FFFFB6;
 }
+
 .lema {
-    color:#BB4DB9;
+    color: #BB4DB9;
     font-family: 'Galada', cursive;
-    font-size: 1.6em; 
+    font-size: 1.6em;
     text-align: center;
-    margin-bottom: 3em; 
+    margin-bottom: 3em;
 }
 
 .menu {
     background-color: #DC5CD3;
-   
-    padding: 0.625em 1.25em;
+    padding: 1%;
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: space-between; /* Distribuye espacio entre los elementos */
-    width: 88.75em;
-    margin: 0 auto;
-    margin-top: 1em;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    /* Distribuye espacio entre los elementos */
+    width: 100%;
 }
+
 .menu img {
-    width: 6em; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: auto;
+    width: 6%;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
 }
+
 .right-image {
-    order: 1; 
+    order: 1;
 }
 
-
-label[for="sortBy"] {
+label {
     font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
+    font-size: x-large;
     color: #fdd5fa;
     width: 15%;
     margin: 0.1em;
 }
 
-#sortBy {
+select {
     background-color: #fdd5fa;
     border-radius: 2em;
-    padding: 0.5em 1em; /* Ajusta el padding horizontal según tus necesidades */
+    padding: 0.5em 1em;
+    /* Ajusta el padding horizontal según tus necesidades */
     font-family: "Roboto", sans-serif;
-    font-size: 1em;
+    font-size: medium;
     color: #25022d;
-    width: 15%; /* Asegura que ambos elementos ocupen el mismo ancho */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-
-}
-
-label[for="sortOrder"] {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    color: #fdd5fa;
     width: 15%;
-    margin: 0.1em;
-}
-#sortOrder {
-    background-color: #fdd5fa;
-    border-radius: 2em;
-    padding: 0.5em 1em; /* Ajusta el padding horizontal según tus necesidades */
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color: #25022d;
-    width: 15%; /* Asegura que ambos elementos ocupen el mismo ancho */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-    
-}
+    /* Asegura que ambos elementos ocupen el mismo ancho */
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total */
 
+}
 
 button[data-testid="button-clear"] {
     font-family: "Roboto", sans-serif;
     background-color: #6477e1;
     color: #f7e0f5;
-    font-size: 1.2em;
-    padding: 5px 10px;
+    font-size: large;
+    padding: 0.5%;
     cursor: pointer;
-    border-radius: 0.2em;
-    margin-left: 70px;
+    border-radius: 0.7em;
+    margin-left: 2em;
     width: 12%;
+    text-align: center;
 }
 
 .card-list {
     background-color: #D2D3FC;
     border: 4px solid #FFFFB6;
-    border-radius: 30px;
-    width: 350px;
+    border-radius: 3em;
+    width: 30%;
     list-style: none;
     margin-top: 20px;
-    padding: 20px;
+    padding: 3em;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 1em;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #E7E8FF;
-    width: 90.9375rem; 
     list-style: none;
-    margin-top: 1.25rem; 
-    padding: 1.25rem; 
+    padding: 1.25rem;
     box-sizing: border-box;
-    margin: 0.625rem auto; 
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .card-container h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 1.0em;
+    font-size: larger;
     background-color: #45A7F0;
     color: #001184;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
-    padding: 10px;
-    border-radius: 30px;
-    width: 80%;
+    padding: 1em;
+    border-radius: 2em;
+    width: 90%;
 }
 
 
 .div-item {
-        width:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img[itemprop="image"] {
+    width: 50%;
+    height: 13em;
 }
 
 .item-facts {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 1em;
 }
 
-.facts-fecha {
+.facts {
     background-color: #F586EB;
     font-family: "Roboto", sans-serif;
-    font-size: 1.1em;
-    color: #F6F6FD;
+    font-size: medium;
+    color: #470742;
     text-align: center;
     padding: 0.8em;
-    border-radius: 1em;
+    border-radius: 2em;
     width: 90%;
+    margin: 2%;
 }
 
-.facts-signo {
-    background-color: #F586EB;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.1em;
-    color: #F6F6FD;
+footer {
+    font-size: larger;
     text-align: center;
-    padding: 0.8em;
-    border-radius: 1em;
-    width: 90%;
-}
-
-.facts-tipo {
-    background-color: #F586EB;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.1em;
-    color: #F6F6FD;
-    text-align: center;
-    padding: 0.8em;
-    border-radius: 1em;
-    width: 90%;
+    color: blueviolet;
+    padding: 1em;
+    font-weight: bolder;
 }
