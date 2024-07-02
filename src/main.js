@@ -12,11 +12,13 @@ function load(data) {
   rootElement.appendChild(ul);  
 }
 
+//Funcion Filtrar data
 document.getElementById('filterBy').addEventListener('change', function() {
   const dataFiltrada = filterData(data, 'tipoGuardian', this.value);
   load(dataFiltrada);
 });
 
+//Funcion Ordenar data
 document.getElementById('sortBy').addEventListener('change', function(){
   const sortOrder = this.value;
   const dataOrdenada = sortData(data, 'name', sortOrder);

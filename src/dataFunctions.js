@@ -1,10 +1,12 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 
+//Crear funcion filterData
 export const filterData = (data, filterBy, value) => {
   return data.filter(item =>
     item.extraInfo[filterBy].toLowerCase() === value.toLowerCase());
 }
 
+//Crear funcion sortData
 export const sortData = (data, sortBy, sortOrder) => {
   const dataCopia = data;
   if (sortOrder === "asc") {
