@@ -22,7 +22,6 @@
         <h1>Mundo Sailor</h1>
       </header>
     </div>
-    </div>
 
 
     <section class="lema">
@@ -36,8 +35,8 @@
     <img class="right-image" src="images/2233.png" alt="Imagen derecha">
     <img class="left-image" src="images/2233.png" alt="Imagen izquierda">
 
-    <label for="sortBy">Seleccionar por rol</label>
-    <select data-testid="select-filter" name="tipo" id="sortBy">
+    <label for="filterBy">Seleccionar por rol</label>
+    <select data-testid="select-filter" name="tipo" id="filterBy">
       <option value="vacio"></option>
       <option value="guardian sistema solar interno"> Guardian Sistema Solar Interno </option>
       <option value="guardian sistema solar externo"> Guardian Sistema Solar Externo </option>
@@ -47,11 +46,11 @@
       <option value="enemigos"> Enemigos </option>
     </select>
 
-    <label for="sortOrder">Orden por nombre</label>
-    <select data-testid="select-sort" name="nombre" id="sortOrder">
+    <label for="sortBy">Orden por nombre</label>
+    <select data-testid="select-sort" name="nombre" id="sortBy">
       <option value="vacio"> </option>
       <option value="asc"> Orden A-Z </option>
-      <option value="des"> Orden Z -A </option>
+      <option value="desc"> Orden Z -A </option>
     </select>
     <button data-testid="button-clear"> Limpiar filtro </button>
   </section>

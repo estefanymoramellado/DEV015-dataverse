@@ -1,4 +1,4 @@
-import { filterData } from './dataFunctions.js';
+import { filterData, sortData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -12,9 +12,15 @@ function load(data) {
   rootElement.appendChild(ul);  
 }
 
-document.getElementById('sortBy').addEventListener('change', function() {
+document.getElementById('filterBy').addEventListener('change', function() {
   const dataFiltrada = filterData(data, 'tipoGuardian', this.value);
   load(dataFiltrada);
+});
+
+document.getElementById('sortBy').addEventListener('change', function(){
+  const sortOrder = this.value;
+  const dataOrdenada = sortData(data, 'name', sortOrder);
+  load(dataOrdenada);
 });
 
 function init() {  
