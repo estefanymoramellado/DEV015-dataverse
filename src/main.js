@@ -27,7 +27,7 @@ document.getElementById('sortBy').addEventListener('change', function(){
   if (valorSeleccionadoFilterBy === "vacio") {
     const dataOrdenada = sortData(copiaData, 'name', sortOrder);
     load(dataOrdenada);
-  } else if (valorSeleccionadoFilterBy != "vacio") {
+  } else if (valorSeleccionadoFilterBy !== "vacio") {
     const dataFiltrada = filterData(copiaData, 'tipoGuardian', valorSeleccionadoFilterBy);
     const dataOrdenada = sortData(dataFiltrada, 'name', sortOrder);
     load(dataOrdenada);
