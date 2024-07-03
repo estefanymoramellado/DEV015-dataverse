@@ -21,8 +21,16 @@ document.getElementById('filterBy').addEventListener('change', function() {
 //Funcion Ordenar data
 document.getElementById('sortBy').addEventListener('change', function(){
   const sortOrder = this.value;
-  const dataOrdenada = sortData(data, 'name', sortOrder);
-  load(dataOrdenada);
+  const valorSeleccionadoFilterBy = document.getElementById('filterBy').value;
+
+  if (valorSeleccionadoFilterBy === "vacio") {
+    const dataOrdenada = sortData(data, 'name', sortOrder);
+    load(dataOrdenada);
+  } else if (valorSeleccionadoFilterBy != "vacio") {
+    const dataFiltrada = filterData(data, 'tipoGuardian', valorSeleccionadoFilterBy);
+    const dataOrdenada = sortData(dataFiltrada, 'name', sortOrder);
+    load(dataOrdenada);
+  }
 });
 
 function init() {  
