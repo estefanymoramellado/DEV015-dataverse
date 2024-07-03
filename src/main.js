@@ -22,15 +22,23 @@ document.getElementById('filterBy').addEventListener('change', function() {
 document.getElementById('sortBy').addEventListener('change', function(){
   const sortOrder = this.value;
   const valorSeleccionadoFilterBy = document.getElementById('filterBy').value;
+  const copiaData = [...data];
 
   if (valorSeleccionadoFilterBy === "vacio") {
-    const dataOrdenada = sortData(data, 'name', sortOrder);
+    const dataOrdenada = sortData(copiaData, 'name', sortOrder);
     load(dataOrdenada);
   } else if (valorSeleccionadoFilterBy != "vacio") {
-    const dataFiltrada = filterData(data, 'tipoGuardian', valorSeleccionadoFilterBy);
+    const dataFiltrada = filterData(copiaData, 'tipoGuardian', valorSeleccionadoFilterBy);
     const dataOrdenada = sortData(dataFiltrada, 'name', sortOrder);
     load(dataOrdenada);
   }
+});
+
+// Funcion Borrar valores
+document.querySelector('button[data-testid="button-clear"]').addEventListener('click', function(){
+  document.getElementById('filterBy').value = 'vacio';
+  document.getElementById('sortBy').value = 'vacio';
+  init();
 });
 
 function init() {  
