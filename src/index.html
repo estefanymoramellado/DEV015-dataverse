@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +10,26 @@
     href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 </head>
-
 <body>
   <section class="encabezado">
-
-
     <div class="contenedor-logoh1">
       <img class="logo" src="images/1122.png" alt="Imagen en la esquina superior izquierda">
       <header>
         <h1>Mundo Sailor</h1>
       </header>
     </div>
-
-
     <section class="lema">
       <main>
         <h2>¡Descubre tu personaje favorito!</h2>
       </main>
     </section>
   </section>
-
   <section class="menu">
     <img class="right-image" src="images/2233.png" alt="Imagen derecha">
     <img class="left-image" src="images/2233.png" alt="Imagen izquierda">
-
-    <label for="filterBy">Seleccionar por rol</label>
+    <label for="filterBy">Seleccionar por rol:</label>
     <select data-testid="select-filter" name="tipo" id="filterBy">
-      <option value="vacio"></option>
+      <option value="vacio">Seleccionar opción...</option>
       <option value="guardian sistema solar interno"> Guardian Sistema Solar Interno </option>
       <option value="guardian sistema solar externo"> Guardian Sistema Solar Externo </option>
       <option value="guardian fuera del sistema solar"> Guardian Fuera Sistema Solar </option>
@@ -45,21 +37,37 @@
       <option value="gato guardian"> Gato Guardian </option>
       <option value="enemigos"> Enemigos </option>
     </select>
-
-    <label for="sortBy">Orden por nombre</label>
+    <label for="sortBy">Ordenar por nombre:</label>
     <select data-testid="select-sort" name="nombre" id="sortBy">
-      <option value="vacio"> </option>
+      <option value="vacio">Seleccionar opción...</option>
       <option value="asc"> Orden A-Z </option>
       <option value="desc"> Orden Z -A </option>
     </select>
     <button data-testid="button-clear"> Limpiar filtro </button>
   </section>
-
-
   <section id="root">
+  </section>
+  <section class="estadisticas">
+      <div class="titulo-contenedor">
+        <img class="varita" src="images/5566.png" alt="Imagen estadistica">
+        <h2>Estadísticas Sailor</h2>
+    </div>
+    <div class="container2">
+      <div class="cuadrado">
+        <div class="content">30%</div>
+      </div>
+      <div class="cuadrado">
+        <div class="content">50%</div>
+      </div>
+      <div class="cuadrado">
+        <div class="content">50%</div>
+      </div>
+      <div class="cuadrado">
+        <div class="content">20%</div>
+      </div>
+    </div>
   </section>
   <footer> @Todos los derechos reservados.</footer>
   <script src="main.js" type="module"></script>
 </body>
-
 </html>

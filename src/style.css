@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    margin: 1em;
+}
+
 .encabezado {
     margin-top: 4em;
 }
@@ -17,12 +21,14 @@ body {
     position: relative;
     width: 100%;
     height: 4em;
-    padding: 1rem;
+    padding: 2rem;
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     align-items: center;
     padding-left: 0;
+    z-index: 4;
+    margin-bottom: -3em;
 }
 
 .logo {
@@ -37,80 +43,117 @@ header {
     font-size: x-large;
     font-family: 'Galada', cursive;
     -webkit-text-stroke: 0.5px #FFFFB6;
-    padding-bottom: 2em;
-    height: 2em;
+
 }
 
 .lema {
-    color: #BB4DB9;
+    color: #2a2c8b;
     font-family: 'Galada', cursive;
     font-size: x-small;
     text-align: center;
-    margin-bottom: 3em;
+    margin-top: 1.2em;
     display: flex;
     padding-bottom: 1em;
-    padding-left: 12em;
+    padding-left: 15em;
 }
 
 .menu {
     background-color: #DC5CD3;
-    padding: 1%;
+    border-radius: 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     height: 2.6em;
+    overflow: visible;
+    /* Permite que el contenido se salga del contenedor */
+    margin: 0 auto;
+    position: relative;
+    /* Posición relativa para controlar overflow */
 }
 
 .menu img {
     width: 10%;
+    margin-top: -1em;
+
+}
+
+.left-image {
+    margin-left: -0.8em;
 }
 
 .right-image {
     order: 1;
+    margin-right: -0.8em;
 }
 
 label {
     font-family: "Roboto", sans-serif;
-    font-size: x-small;
-    color: #fdd5fa;
-    width: 100%;
+    font-size: 50%;
+    color: #f2f0f7;
+    width: 80%;
     margin: 0.5em 0;
+    font-weight: bold;
 }
 
 select {
     background-color: #fdd5fa;
     border-radius: 2em;
     font-family: "Roboto", sans-serif;
-    font-size: medium;
-    color: #25022d;
-    width: 100%;
+    font-size: 40%;
+    color: #321e6e;
+    width: 80%;
     box-sizing: border-box;
+    padding: 1em;
+    border: 2px solid #fdfbfe;
+    appearance: none;
+    /* Elimina el estilo por defecto del navegador */
+    margin: 1em;
+}
+
+option {
+    font-size: 2em;
+    /* Asegura que el tamaño de la fuente de las opciones coincida */
+    color: #321e6e;
+    /* Color del texto de las opciones */
+    background-color: #fdd5fa;
+    /* Fondo de las opciones */
+    font-family: "Roboto", sans-serif;
+    padding: 1em;
 }
 
 button[data-testid="button-clear"] {
     font-family: "Roboto", sans-serif;
     background-color: #6477e1;
     color: #f7e0f5;
-    font-size: x-small;
+    font-size: 0.5em;
+    font-weight: bold;
     padding: 0.5%;
     cursor: pointer;
     border-radius: 0.7em;
     margin-left: 0;
     width: 100%;
     text-align: center;
+    border: 2px solid rgb(236, 173, 245);
 }
 
 .card-list {
     background-color: #D2D3FC;
-    border: 4px solid #FFFFB6;
+    border: 4px solid #f5f5f0;
     border-radius: 3em;
-    width: 80%;
+    width: 100%;
     list-style: none;
     margin-top: 20px;
     padding: 1em;
     box-sizing: border-box;
-    margin: 1em;
+    margin: 20px auto;
+    /* Centrar horizontalmente */
+    display: flex;
+    align-items: center;
+    /* Centrar horizontalmente los elementos */
+    justify-content: center;
+    /* Centrar verticalmente los elementos */
+    box-shadow: 0 10px 8px rgba(227, 61, 216, 0.1);
 }
 
 .card-container {
@@ -125,26 +168,32 @@ button[data-testid="button-clear"] {
 
 .card-container h2 {
     font-family: "Roboto", sans-serif;
-    font-size: smaller;
+    font-size: 0.7em;
     background-color: #45A7F0;
-    color: #001184;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    padding: 1em;
-    border-radius: 2em;
-    width: 90%;
+    padding: 0.7em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .div-item {
-    width: 100%;
+
     display: flex;
     justify-content: center;
 }
 
 img[itemprop="image"] {
-    width: 50%;
-    height: 11em;
+    height: 12em;
+    width: 9em;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* Ajuste del objeto */
+    display: block;
+    /* Hacer que la imagen sea un bloque */
+    margin: 0 auto;
+    /* Margen automático para centrar horizontalmente */
 }
 
 .item-facts {
@@ -160,16 +209,75 @@ img[itemprop="image"] {
     color: #470742;
     text-align: center;
     padding: 0.8em;
-    border-radius: 2em;
-    width: 80%;
-    margin: 2%
+    width: 70%;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estadisticas {
+    font-family: 'Galada';
+    font-size: 60%;
+    color: #3b53ba;
+    text-align: center;
+
+}
+
+.titulo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.varita {
+    width: 4%;
+    margin-bottom: 1em;
+
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cuadrado {
+    width: 20%;
+    /* Ancho del cuadrado */
+    padding-top: 10%;
+    /* Altura del cuadrado (relativa al ancho para que sea cuadrado) */
+    background-color: #D2D3FC;
+    /* Color de fondo del cuadrado */
+    border: 4px solid #f5f5f3;
+    border-radius: 1em;
+    position: relative;
+    overflow: hidden;
+    /* Para que el contenido no se desborde */
+    margin-bottom: 20px;
+    /* Espacio entre los cuadrados */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: blueviolet;
+    font-size: 80%;
+    font-family: "Roboto", sans-serif;
 }
 
 footer {
-    font-size: medium;
+    font-size: 1.5em;
     text-align: center;
     color: blueviolet;
-    padding: 1em;
+    margin-top: 5em;
+    margin-bottom: 2em;
     font-weight: bolder;
 }
 
@@ -179,7 +287,9 @@ footer {
     }
 
     .encabezado {
-        margin-top: 9em;
+        margin-bottom: -2.4em;
+        margin-top: 10em;
+        margin-left: 8em;
     }
 
     .contenedor-logoh1 {
@@ -188,7 +298,8 @@ footer {
 
     .logo {
         width: 100%;
-        max-width: 18rem;
+        max-width: 20rem;
+        transform: rotate(-6deg);
     }
 
     header {
@@ -197,11 +308,18 @@ footer {
 
     .lema {
         font-size: 1.6em;
-        padding-left: 17em;
+        padding-left: 25em;
+        margin-top: 1.2em;
+    }
+
+    .menu {
+        font-size: 2em;
     }
 
     .menu img {
-        width: 6%;
+        width: 8%;
+        margin-top: -2em;
+
     }
 
     label {
@@ -210,33 +328,67 @@ footer {
     }
 
     select {
-        padding: 0.5em 1em;
+        font-size: 0.6em;
+        padding: 0.5em;
         width: 15%;
+    }
+
+
+    option {
+        font-size: 1em;
+        color: #321e6e;
+        background-color: #fdd5fa;
     }
 
     button[data-testid="button-clear"] {
         font-size: large;
         margin-left: 2em;
-        width: 12%;
+        width: 9%;
     }
 
     .card-list {
         width: 30%;
-        padding: 3em;
+
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+
+
+    .div-item img {
+
+        height: 18em;
+        width: 14em;
+
     }
 
     .card-container h2 {
-        font-size: larger;
+        padding: 0.7em;
+        font-size: medium;
     }
 
-    img[itemprop="image"] {
-        height: 15em;
-    }
 
     .facts {
         font-size: medium;
     }
 
+    .estadisticas {
+        font-size: 2em;
+    }
 
+    .cuadrado {
+        width: 20%;
+    }
+
+    .content {
+        font-size: 2em;
+    }
+
+    .footer {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 8emm;
+        margin-bottom: 2em;
+    }
 
 }
