@@ -17,7 +17,7 @@ export const renderItems = (data) => {
             <div class="div-item">
               <img itemprop="image" src="${item.imageUrl}" alt="${item.name}">
             </div>
-            <h2 itemprop="name">${item.name} (${item.shortDescription})</h2>
+            <h2 itemprop="nombre">${item.name} (${item.shortDescription})</h2>
         </div>
         <div class="item-facts">
             <p class="facts"><strong>Cumpleaños:</strong> <span itemprop="birthDate">${item.facts.fechaDeNacimiento}</span></p>
