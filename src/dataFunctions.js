@@ -8,9 +8,8 @@ export const filterData = (data, filterBy, value) => {
 
 //Crear funcion sortData
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataCopia = data;
   if (sortOrder === "asc") {
-    dataCopia.sort((a, b) => {
+    data.sort((a, b) => {
       if (a[sortBy] < b[sortBy]) {
         return -1;
       }
@@ -20,7 +19,7 @@ export const sortData = (data, sortBy, sortOrder) => {
       return 0;
     });
   } else if (sortOrder === "desc") {
-    dataCopia.sort((a, b) => {
+    data.sort((a, b) => {
       if (a[sortBy] > b[sortBy]) {
         return -1;
       }
@@ -30,5 +29,5 @@ export const sortData = (data, sortBy, sortOrder) => {
       return 0;
     });
   }
-  return dataCopia;
+  return data;
 }
