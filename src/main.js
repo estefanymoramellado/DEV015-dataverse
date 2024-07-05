@@ -59,7 +59,7 @@ document.querySelector('button[data-testid="button-est"]').addEventListener('cli
   const estadisticas = computeStats(dataFiltrada, totalPersonajes);
 
   resultadoDiv.innerHTML = `
-    <p>Porcentaje: ${estadisticas.porcentajeTipoGuardian.toFixed(2)}%</p>
+    <p>Porcentaje: ${estadisticas.porcentajeTipoGuardian.toFixed(2)}%, de tipo: ${valorSeleccionadoFilterBy}</p>
     <p>Nombres: ${estadisticas.tipoGuardian.join(', ')}</p>
     `;
 
