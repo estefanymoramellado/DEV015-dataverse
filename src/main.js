@@ -1,4 +1,4 @@
-import { filterData, sortData } from './dataFunctions.js';
+import { filterData, sortData, computeStats } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -9,17 +9,17 @@ function load(data) {
   // Agregar el <ul> al elemento root
   const rootElement = document.querySelector('#root');
   rootElement.innerHTML = "";
-  rootElement.appendChild(ul);  
+  rootElement.appendChild(ul);
 }
 
 //Funcion Filtrar data
-document.getElementById('filterBy').addEventListener('change', function() {
+document.getElementById('filterBy').addEventListener('change', function () {
   const dataFiltrada = filterData(data, 'tipoGuardian', this.value);
   load(dataFiltrada);
 });
 
 //Funcion Ordenar data
-document.getElementById('sortBy').addEventListener('change', function(){
+document.getElementById('sortBy').addEventListener('change', function () {
   const sortOrder = this.value;
   const valorSeleccionadoFilterBy = document.getElementById('filterBy').value;
   const copiaData = [...data];
@@ -35,14 +35,32 @@ document.getElementById('sortBy').addEventListener('change', function(){
 });
 
 // Funcion Borrar valores
-document.querySelector('button[data-testid="button-clear"]').addEventListener('click', function(){
-  document.getElementById('filterBy').value = 'vacio';
-  document.getElementById('sortBy').value = 'vacio';
+document.querySelector('button[data-testid="button-clear"]').addEventListener('click', function () {
+  document.querySelector('filterBy').value = 'vacio';
+  document.querySelector('select[data-testid="select-filter"]').value = 'vacio';
   init();
 });
 
-function init() {  
+function init() {
   load(data);
 }
 // Ejecutar la función de inicialización cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', init);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const buttonEst = document.querySelector('button[data-testid="button-est"]');
+  const resultadoDiv = document.querySelector('div[type="resultado"]');
+  
+  resultadoDiv.innerHTML = '<p>...</p>';
+
+  buttonEst.addEventListener('click', function () {
+    const stats = computeStats(data);
+
+    //mostrar los resultados
+    resultadoDiv.innerHTML = `
+      <p>Porcentaje de gatos guardianes: ${stats.porcentageCatGuardians}%</p>
+     <p>Nombres: ${stats.catGuardians.join(', ')}</p>
+    `;
+  });
+});
