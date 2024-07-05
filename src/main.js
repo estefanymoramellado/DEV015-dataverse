@@ -36,9 +36,33 @@ document.getElementById('sortBy').addEventListener('change', function () {
 
 // Funcion Borrar valores
 document.querySelector('button[data-testid="button-clear"]').addEventListener('click', function () {
-  document.querySelector('filterBy').value = 'vacio';
   document.querySelector('select[data-testid="select-filter"]').value = 'vacio';
+  document.querySelector('select[data-testid="select-sort"]').value = 'vacio';
+  document.querySelector('div[type="resultado"]').innerHTML = "Obten la estadistica de tu selección";
+
   init();
+});
+
+// Funcion Estadisticas
+
+document.querySelector('button[data-testid="button-est"]').addEventListener('click', function () {
+  const resultadoDiv = document.querySelector('div[type="resultado"]');
+
+  // Trae el valor del select filtro
+  const valorSeleccionadoFilterBy = document.getElementById('filterBy').value;
+  const dataFiltrada = filterData(data, 'tipoGuardian', valorSeleccionadoFilterBy);
+
+  // Obtengo total personajes
+  const totalPersonajes = data.length;
+
+  // Obtiene estadisticas
+  const estadisticas = computeStats(dataFiltrada, totalPersonajes);
+
+  resultadoDiv.innerHTML = `
+    <p>Porcentaje: ${estadisticas.porcentajeTipoGuardian.toFixed(2)}%</p>
+    <p>Nombres: ${estadisticas.tipoGuardian.join(', ')}</p>
+    `;
+
 });
 
 function init() {
@@ -46,21 +70,3 @@ function init() {
 }
 // Ejecutar la función de inicialización cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', init);
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const buttonEst = document.querySelector('button[data-testid="button-est"]');
-  const resultadoDiv = document.querySelector('div[type="resultado"]');
-  
-  resultadoDiv.innerHTML = '<p>...</p>';
-
-  buttonEst.addEventListener('click', function () {
-    const stats = computeStats(data);
-
-    //mostrar los resultados
-    resultadoDiv.innerHTML = `
-      <p>Porcentaje de gatos guardianes: ${stats.porcentageCatGuardians}%</p>
-     <p>Nombres: ${stats.catGuardians.join(', ')}</p>
-    `;
-  });
-});
