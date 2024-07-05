@@ -31,3 +31,28 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
   return data;
 }
+
+//crear funcion computeStats
+export function computeStats(data) {
+  const totalPersonajes = data.reduce((acc) => acc + 1, 0);
+
+  const { totalCatGuardians, catGuardians } = data.reduce((acc, personajes) => {
+    if (personajes.extraInfo.tipoGuardian === 'Gato Guardian') {
+      acc.totalCatGuardians += 1; //CONTADOR
+      acc.catGuardians.push(personajes); //almacena
+    }
+    return acc;
+  }, { totalCatGuardians: 0, catGuardians: [] });
+
+  const porcentageCatGuardians = (totalCatGuardians / totalPersonajes) * 100;//calcula porcentaje
+  const catGuardianNames = catGuardians.map(cat => cat.name);//almacena los nombres
+  
+
+  return {
+    totalPersonajes,
+    totalCatGuardians,
+    porcentageCatGuardians,
+    catGuardians: catGuardianNames
+
+  };
+}
