@@ -218,60 +218,58 @@ img[itemprop="image"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
+    margin-top: 4em;
+}
+
+.varita {
+    position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor */
+    width: 7%;
+    margin-left: -10em;
 }
 
 button[data-testid="button-est"] {
     font-family: "Roboto", sans-serif;
-    background-color: #6477e1;
+    background-color: #DC5CD3;
     color: #f7e0f5;
     font-size: 1em;
     font-weight: bold;
-    padding: 0.5%;
+    padding: 0.4em;
     cursor: pointer;
-    border-radius: 0.7em;
+    border-radius: 0.5em;
     margin-left: 0;
-    width: 20%;
+    width: 70%;
+    height: 10%;
     text-align: center;
-    border: 2px solid rgb(236, 173, 245);
+    border: 2px solid rgb(252, 247, 251);
 }
-
-
-.varita {
-    width: 4%;
-    margin-bottom: 1em;
-
-}
-
 
 .container2 {
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .resultado-estadisticas {
     font-family: "Roboto", sans-serif;
     text-align: center;
-    color: #BB4DB9;
-    width: 20%;
+    color: hsl(301, 45%, 52%);
+    width: 80%;
     background-color: #D2D3FC;
     border: 4px solid #f5f5f3;
-    border-radius: 1em;
-    font-weight: bolder;
+    border-radius: 0.4em;
     font-size: 0.7em;
     margin: 0.5em;
+    padding: 0.7em;
 }
 
+
+
+
 footer {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     color: blueviolet;
     margin-top: 5em;
     margin-bottom: 2em;
-    font-weight: bolder;
 }
 
 @media (min-width: 768px) {
@@ -294,7 +292,7 @@ footer {
         max-width: 20rem;
         transform: rotate(-6deg);
         margin-bottom: 3em;
-        
+
     }
 
     header {
@@ -370,12 +368,18 @@ footer {
         font-size: 2em;
     }
 
-    .cuadrado-gato {
-        width: 20%;
-    }
-
     .content {
         font-size: 2em;
+    }
+
+    .varita {
+        position: absolute;
+        width: 4%;
+        margin-right: 11em;
+    }
+    .container2 {
+        justify-content: center;
+        display: flex;
     }
 
     .footer {
