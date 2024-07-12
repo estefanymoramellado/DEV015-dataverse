@@ -1,6 +1,7 @@
 import { expect } from '@playwright/test';
-import { filterData, sortData } from '../src/dataFunctions.js';
+import { filterData, sortData, computeStats } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
+import { data as fakeDataOrder } from './dataOrdenada.js';
 
 //console.log(fakeData);
 
@@ -22,31 +23,42 @@ describe('pruebas para funcion "sortData"', () => {
 
   it('retorna data ordenada de forma ascendente `sortData`', () => {
     const sortOrder = "asc";
-    const dataOrdenada = sortData(fakeData, 'name', sortOrder);
+    const copiaData = [...fakeData];
+    const dataOrdenada = sortData(copiaData, 'name', sortOrder);
     expect(dataOrdenada[0].name).toBe('Ami Mizuno');
     expect(dataOrdenada[23].name).toBe('Yaten Kou');
   });
-  /* it('retorna data ordenada de forma ascendente cuando los valores son iguales `sortData`', () => {
+  it('retorna posicion 0 data ordenada de forma ascendente `sortData`', () => {
     const sortOrder = "asc";
-    const dataOrdenada = sortData(fakeData, 'name', sortOrder);
-    expect(dataOrdenada[0].name).toBe('Ami Mizuno');
-    expect(dataOrdenada[0].name).toBe('Ami Mizuno');
-  }); */
+    const copiaData = [...fakeDataOrder];
+    const dataOrdenada = sortData(copiaData, 'name', sortOrder);
+    expect(dataOrdenada[0].name).toBe('C Usagi Tsukino');    
+    expect(dataOrdenada[1].name).toBe('C Usagi Tsukino');
+  });
   it('retorna data ordenada de forma descendente `sortData`', () => {
     const sortOrder = "desc";
-    const dataOrdenada = sortData(fakeData, 'name', sortOrder);
+    const copiaData = [...fakeData];
+    const dataOrdenada = sortData(copiaData, 'name', sortOrder);
     expect(dataOrdenada[0].name).toBe('Yaten Kou');    
     expect(dataOrdenada[23].name).toBe('Ami Mizuno');
   });
-  it('retorna data ordenada de forma descendente cuando los valores son iguales `sortData`', () => {
+  it('retorna posicion 0 data ordenada de forma descendente `sortData`', () => {
     const sortOrder = "desc";
-    const dataOrdenada = sortData(fakeData, 'name', sortOrder);
-    expect(dataOrdenada[0].name).toBe('Yaten Kou');    
-    expect(dataOrdenada[0].name).toBe('Yaten Kou');
+    const copiaData = [...fakeDataOrder];
+    const dataOrdenada = sortData(copiaData, 'name', sortOrder);
+    expect(dataOrdenada[0].name).toBe('C Usagi Tsukino');    
+    expect(dataOrdenada[1].name).toBe('C Usagi Tsukino');
   });
-  /* it('retorna data ordenada de forma descendente cuando los valores son iguales `sortData`', () => {
-    const sortOrder = "desc";
-    const dataOrdenada = sortData(fakeData, 'name', sortOrder);
-    expect(dataOrdenada[0].name).toBe(0);
-  }); */
+});
+
+describe('pruebas para funcion "computeStats"', () => {
+  it('Obtención de estadísticas cuando hay datos válidos', () => {
+    const totalPersonajes = 24
+    const optionValueSeleccionado = "guardian sistema solar interno";
+    const resultadoFiltrado = filterData(fakeData, 'tipoGuardian', optionValueSeleccionado);
+    const resultado = computeStats(resultadoFiltrado, totalPersonajes);
+    expect(resultado.totalPersonajes).toBe(totalPersonajes);
+    expect(resultado.totalTipoGuardian).toBe(5);
+    expect(resultado.porcentajeTipoGuardian).toBeCloseTo((5 / 24) * 100);
+  });
 });
