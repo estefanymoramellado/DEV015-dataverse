@@ -18,7 +18,8 @@ export const sortData = (data, sortBy, sortOrder) => {
       }
       return 0;
     });
-  } else if (sortOrder === "desc") {
+  }
+  if (sortOrder === "desc") {
     data.sort((a, b) => {
       if (a[sortBy] > b[sortBy]) {
         return -1;
