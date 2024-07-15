@@ -31,7 +31,4 @@ export const renderItems = (data) => {
   });
 
   return ul;
-
-
 }
-//li.classList.add('card-container'); //agregar estilo a los li
