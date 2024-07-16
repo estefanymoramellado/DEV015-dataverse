@@ -1,0 +1,389 @@
+/* Mobile First Styles */
+body {
+    background-image: url('images/3638367.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 2em;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 1em;
+}
+
+.encabezado {
+    margin-top: 4em;
+}
+
+.contenedor-logoh1 {
+    position: relative;
+    width: 100%;
+    height: 4em;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    z-index: 3;
+    margin-bottom: -3em;
+}
+
+.logo {
+    width: 35%;
+    padding-left: 1em;
+    padding-top: 1em;
+
+}
+
+header {
+    color: #BB4DB9;
+    font-size: x-large;
+    font-family: 'Galada', cursive;
+    -webkit-text-stroke: 0.5px #FFFFB6;
+
+}
+
+.lema {
+    color: #2a2c8b;
+    font-family: 'Galada', cursive;
+    font-size: x-small;
+    text-align: center;
+    margin-top: 1.2em;
+    display: flex;
+    padding-bottom: 1em;
+    padding-left: 15em;
+}
+
+.menu {
+    background-color: #DC5CD3;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 2.6em;
+    overflow: visible;
+    /* Permite que el contenido se salga del contenedor */
+    margin: 0 auto;
+    position: relative;
+    /* Posición relativa para controlar overflow */
+}
+
+.menu img {
+    width: 10%;
+    margin-top: -1em;
+
+}
+
+.left-image {
+    margin-left: -0.8em;
+}
+
+.right-image {
+    order: 1;
+    margin-right: -0.8em;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    font-size: 50%;
+    color: #f2f0f7;
+    width: 80%;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+select {
+    background-color: #fdd5fa;
+    border-radius: 2em;
+    font-family: "Roboto", sans-serif;
+    font-size: 40%;
+    color: #321e6e;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1em;
+    border: 2px solid #eeecef;
+    appearance: none;
+    /* Elimina el estilo por defecto del navegador */
+    margin: 1em;
+}
+
+option {
+    font-size: 2em;
+    color: #321e6e;
+    /* Color del texto de las opciones */
+    background-color: #fdd5fa;
+    /* Fondo de las opciones */
+    font-family: "Roboto", sans-serif;
+    padding: 1em;
+}
+
+button[data-testid="button-clear"] {
+    font-family: "Roboto", sans-serif;
+    background-color: #6477e1;
+    color: #f7e0f5;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 0.5%;
+    cursor: pointer;
+    border-radius: 0.7em;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    border: 2px solid rgb(236, 173, 245);
+}
+
+.card-list {
+    background-color: #D2D3FC;
+    border: 4px solid #f5f5f0;
+    border-radius: 3em;
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 20px auto;
+    /* Centrar horizontalmente */
+    display: flex;
+    align-items: center;
+    /* Centrar horizontalmente los elementos */
+    justify-content: center;
+    /* Centrar verticalmente los elementos */
+    box-shadow: 0 10px 8px rgba(227, 61, 216, 0.1);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.card-container h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7em;
+    background-color: #45A7F0;
+    padding: 0.7em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-item {
+
+    display: flex;
+    justify-content: center;
+}
+
+img[itemprop="image"] {
+    height: 12em;
+    width: 9em;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* Ajuste del objeto */
+    display: block;
+    /* Hacer que la imagen sea un bloque */
+    margin: 0 auto;
+    /* Margen automático para centrar horizontalmente */
+}
+
+.item-facts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facts {
+    background-color: #F586EB;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    color: #470742;
+    text-align: center;
+    padding: 0.8em;
+    width: 70%;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.varita {
+    position: absolute;
+    /* Posiciona la imagen absolutamente dentro del contenedor */
+    width: 7%;
+    margin-left: -10em;
+}
+
+button[data-testid="button-est"] {
+    font-family: "Roboto", sans-serif;
+    background-color: #DC5CD3;
+    color: #f7e0f5;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.4em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    margin-left: 0;
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    border: 2px solid rgb(252, 247, 251);
+}
+
+.container2 {
+    justify-content: center;
+    display: flex;
+}
+
+.resultado-estadisticas {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: hsl(301, 45%, 52%);
+    width: 80%;
+    background-color: #D2D3FC;
+    border: 4px solid #f5f5f3;
+    border-radius: 0.4em;
+    font-size: 0.7em;
+    margin: 0.5em;
+    padding: 0.7em;
+}
+
+footer {
+    font-size: 1em;
+    text-align: center;
+    color: blueviolet;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    body {
+        margin-top: 5em;
+    }
+
+    .encabezado {
+        margin-bottom: -2.4em;
+        margin-top: 10em;
+        margin-left: 8em;
+    }
+
+    .contenedor-logoh1 {
+        padding-left: 10em;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 20rem;
+        transform: rotate(-6deg);
+        margin-bottom: 3em;
+
+    }
+
+    header {
+        font-size: 400%;
+    }
+
+    .lema {
+        font-size: 1.6em;
+        padding-left: 25em;
+        margin-top: 1.2em;
+    }
+
+    .menu {
+        font-size: 2em;
+    }
+
+    .menu img {
+        width: 8%;
+        margin-top: -2em;
+
+    }
+
+    label {
+        font-size: x-large;
+        width: 15%;
+    }
+
+    select {
+        font-size: 0.6em;
+        padding: 0.5em;
+        width: 15%;
+    }
+
+
+    option {
+        font-size: 1em;
+        color: #321e6e;
+        background-color: #fdd5fa;
+    }
+
+    button[data-testid="button-clear"] {
+        font-size: large;
+        margin-left: 2em;
+        width: 9%;
+    }
+
+    .card-list {
+        width: 30%;
+
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+
+
+    .div-item img {
+
+        height: 18em;
+        width: 14em;
+
+    }
+
+    .card-container h2 {
+        padding: 0.7em;
+        font-size: medium;
+    }
+
+
+    .facts {
+        font-size: medium;
+    }
+
+    .estadisticas {
+        font-size: 2em;
+    }
+
+    .content {
+        font-size: 2em;
+    }
+
+    .varita {
+        position: absolute;
+        width: 4%;
+        margin-right: 11em;
+    }
+
+    .container2 {
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 8emm;
+        margin-bottom: 2em;
+    }
+}
